@@ -46,7 +46,7 @@ class WPPluginWithVueTailwind {
             $submenu['wpp-plugin-with-vue-tailwind.php']['contact'] = array(
                 'Contact',
                 'manage_options',
-                'admin.php?page=wpp-plugin-with-vue-tailwind.php/contact',
+                'admin.php?page=wpp-plugin-with-vue-tailwind.php#/contact',
             );
         });
     }
