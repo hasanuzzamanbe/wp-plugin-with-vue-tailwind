@@ -7,10 +7,10 @@
         <div class="flex flex-wrap">
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="TRAFFIC"
-              statTitle="350,897"
+              statSubtitle="CUSTOMERS"
+              statTitle="23,000"
               statArrow="up"
-              statPercent="3.48"
+              statPercent="12"
               statPercentColor="text-emerald-500"
               statDescripiron="Since last month"
               statIconName="far fa-chart-bar"
@@ -19,10 +19,10 @@
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="NEW USERS"
-              statTitle="2,356"
+              statSubtitle="NEW CUSTOMERS"
+              statTitle="1,200"
               statArrow="down"
-              statPercent="3.48"
+              statPercent="11.27"
               statPercentColor="text-red-500"
               statDescripiron="Since last week"
               statIconName="fas fa-chart-pie"
@@ -31,8 +31,8 @@
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="SALES"
-              statTitle="924"
+              statSubtitle="MONTHLY SALES"
+              statTitle="570"
               statArrow="down"
               statPercent="1.10"
               statPercentColor="text-orange-500"
@@ -43,8 +43,8 @@
           </div>
           <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
             <card-stats
-              statSubtitle="PERFORMANCE"
-              statTitle="49,65%"
+              statSubtitle="GROWTH RATE"
+              statTitle="65%"
               statArrow="up"
               statPercent="12"
               statPercentColor="text-emerald-500"

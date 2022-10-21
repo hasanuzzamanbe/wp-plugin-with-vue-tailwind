@@ -43,6 +43,11 @@ class WPPluginWithVueTailwind {
                 'dashicons-editor-code',
                 25
             );
+            $submenu['wpp-plugin-with-vue-tailwind.php']['dashboard'] = array(
+                'Dashboard',
+                'manage_options',
+                'admin.php?page=wpp-plugin-with-vue-tailwind.php#/',
+            );
             $submenu['wpp-plugin-with-vue-tailwind.php']['contact'] = array(
                 'Contact',
                 'manage_options',

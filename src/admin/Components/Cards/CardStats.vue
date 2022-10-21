@@ -45,7 +45,7 @@ export default {
     },
     statTitle: {
       type: String,
-      default: "350,897",
+      default: "23,000",
     },
     statArrow: {
       default: "up",
@@ -56,7 +56,7 @@ export default {
     },
     statPercent: {
       type: String,
-      default: "3.48",
+      default: "6.90",
     },
     // can be any of the text color utilities
     // from tailwindcss
