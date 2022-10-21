@@ -33,6 +33,7 @@ class WPPluginWithVueTailwind {
             if (!current_user_can('manage_options')) {
                 return;
             }
+            global $submenu;
             add_menu_page(
                 'WPPluginVueTailwind',
                 'WP Plugin Vue Tailwind',
@@ -42,6 +43,11 @@ class WPPluginWithVueTailwind {
                 'dashicons-editor-code',
                 25
             );
+            $submenu['wpp-plugin-with-vue-tailwind.php']['contact'] = array(
+                'Contact',
+                'manage_options',
+                'admin.php?page=wpp-plugin-with-vue-tailwind.php/contact',
+            );
         });
     }
 
@@ -49,6 +55,7 @@ class WPPluginWithVueTailwind {
     {
         wp_enqueue_script('WPWVT-script-boot', WPM_URL . 'assets/admin/js/start.js', array('jquery'), WPM_VERSION, false);
         wp_enqueue_style('WPWVT-style', WPM_URL . 'assets/css/suggestion-style.css', array(), WPM_VERSION);
+        wp_enqueue_style('WPWVT-global-styling', WPM_URL . 'assets/css/element.css', array(), WPM_VERSION);
 
         $WPWVT = apply_filters('WPWVT/admin_app_vars', array(
             //'image_upload_url' => admin_url('admin-ajax.php?action=wpf_global_settings_handler&route=wpf_upload_image'),
@@ -59,12 +66,15 @@ class WPPluginWithVueTailwind {
         wp_localize_script('WPWVT-script-boot', 'WPWVTAdmin', $WPWVT);
 
         echo '<div class="WPWVT-admin-page" id="WPWVT_app">
-            <router-link to="/" >
-                Home
-            </router-link> |
-            <router-link to="/contact" >
-                Contact
-            </router-link>
+            <div class="main-menu text-white-200 bg-wheat-600 p-4">
+                <router-link to="/">
+                    Home
+                </router-link> |
+                <router-link to="/contact" >
+                    Contact
+                </router-link>
+            </div>
+            <hr/>
             <router-view></router-view>
         </div>';
     }

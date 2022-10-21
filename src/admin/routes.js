@@ -1,14 +1,13 @@
-import Dashboard from './Components/Dashboard.vue';
+import Admin from './Components/Admin.vue';
 import Contact from './Components/Contact.vue';
 
-export default [
-    {
+export default [{
         path: '/',
         name: 'dashboard',
-        component: Dashboard,
+        component: Admin,
         meta: {
             active: 'dashboard'
-        }
+        },
     },
     {
         path: '/contact',
@@ -16,4 +15,3 @@ export default [
         component: Contact
     }
 ];
-
