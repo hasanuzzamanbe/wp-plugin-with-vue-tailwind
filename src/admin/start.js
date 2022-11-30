@@ -17,7 +17,7 @@ window.WPPluginVueTailwindApp = framework.app.use(router).mount('#WPWVT_app');
 router.afterEach((to, from) => {
     jQuery('.WPWVT_menu_item').removeClass('active');
     let active = to.meta.active;
-    if(active) {
+    if (active) {
         jQuery('.WPWVT_main-menu-items').find('li[data-key='+active+']').addClass('active');
     }
 });

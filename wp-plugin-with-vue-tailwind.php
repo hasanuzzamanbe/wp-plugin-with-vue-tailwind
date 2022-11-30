@@ -59,7 +59,6 @@ class WPPluginWithVueTailwind {
     public function renderAdminPage()
     {
         wp_enqueue_script('WPWVT-script-boot', WPM_URL . 'assets/admin/js/start.js', array('jquery'), WPM_VERSION, false);
-        wp_enqueue_style('WPWVT-style', WPM_URL . 'assets/css/suggestion-style.css', array(), WPM_VERSION);
         wp_enqueue_style('WPWVT-global-styling', WPM_URL . 'assets/css/element.css', array(), WPM_VERSION);
 
         $WPWVT = apply_filters('WPWVT/admin_app_vars', array(
